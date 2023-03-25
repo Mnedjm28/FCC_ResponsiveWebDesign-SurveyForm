@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="Stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h1 id="title">Developer event 2023 survey form</h1>
+            <p id="description">Thank you for taking the time to help us improver our futute events</p>
+        </header>
+        
+        <form id="survey-form">            
+            <fieldset>
+                <label id="name-label">Name<span class="reqStart">*</span><input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label id="email-label">Email<span class="reqStart">*</span><input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label id="number-label">Age<input id="number" name="number" type="number" placeholder="Enter your age" pattern="[0-9]" min="13" max="10000" required></label>
+            </fieldset>
+
+            <fieldset>
+                <h4>How did you hear about us ?</h4> 
+                <label for="dropdown-labels">                                       
+                    <select id="dropdown">
+                        <option value="">(Select one)</option>
+                        <option value="1">Friends</option>
+                        <option value="2">University</option>
+                        <option value="3">Programming Groups</option>
+                        <option value="4">Social media</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <h4>Would you like to come to the next event ?</h4>
+                <label for="definitalyRadio-label"><input id="definitalyRadio" class="inline" name="user-coming" value="definitaly" type="radio">Definitaly</label>
+                <label for="maybeRadio-label"><input id="maybeRadio" class="inline" name="user-coming" value="maybe" type="radio">Maybe</label>
+                <label for="notSureRadio-label"><input id="notSureRadio" class="inline" name="user-coming" value="notSure" type="radio">Not sure</label>            
+            </fieldset>
+
+            <fieldset>
+                <h4>Whats topics did you like in this event?</h4>
+                <label for="programming-language"><input id="programming-language" class="inline" name="preferred" value="programming-language" type="checkbox">Programming language</label>
+                <label for="data-structures"><input id="data-structures" class="inline" name="preferred" value="data-structures" type="checkbox">Data structures</label>
+                <label for="algorithms"><input id="algorithms" class="inline" name="preferred" value="algorithms" type="checkbox">Algorithms</label>
+                <label for="coding"><input id="coding" class="inline" name="preferred" value="coding" type="checkbox">Coding</label>
+                <label for="databases"><input id="databases" class="inline" name="preferred" value="databases" type="checkbox">Databases</label>
+                <label for="distibuted-computing"><input id="distibuted-computing" class="inline" name="preferred" value="distibuted-computing" type="checkbox">Distibuted computing</label>
+                <label for="operating-systems"><input id="operating-systems" class="inline" name="preferred" value="operating-systems" type="checkbox">Operating systems</label>
+                <label for="internet-topics"><input id="internet-topics" class="inline" name="preferred" value="internet-topics" type="checkbox">Internet topics</label>
+                <label for="general-ml-ai"><input id="general-ml-ai" class="inline" name="preferred" value="general-ml-ai" type="checkbox">General machine learning and artificial intelligence</label>
+            </fieldset>
+
+            <fieldset>                
+                <h4>Any comments or suggestions?</h4>
+                <label for="textarea-label"><textarea id="textarea" name="textarea" rows="3" cols="40" placeholder="Enter your comment here..."></textarea>
+                </label>
+            </fieldset>
+
+            <input id="submit" type="submit">
+        </form>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>

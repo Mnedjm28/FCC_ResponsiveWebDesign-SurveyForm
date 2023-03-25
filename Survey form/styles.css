@@ -1,0 +1,88 @@
+body{
+    width: 100%;
+    height: 126vh;
+    margin: 0;
+    font-size: 15.5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    background-image: linear-gradient(125deg,rgba(58, 90, 158, 0.8), rgba(154, 155, 138, 0.7)),url("images/backg-pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header:last-of-type {
+    margin-bottom: 10px;
+  }
+
+.content{    
+    margin: 1em auto;
+    width: 61vh;
+    min-width: 350px;
+    max-width: 550px;
+}
+
+h1, p{
+    text-align: center;    
+    margin: 0 auto;
+    color:white;
+    font-weight: bold;
+}
+
+form{
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
+    color: #0a0a23;
+    border-radius: 5px;
+}
+
+.reqStart{
+    color: red;  
+}
+
+fieldset{
+    border: none;
+    padding: 10px;
+    margin: auto;
+}
+
+fieldset p{
+    text-align: left;
+}
+
+fieldset h4{
+    margin: 0px;
+}
+
+label{
+    display: block;
+}
+
+input, select, textarea{
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select{
+    height: 25px;
+}
+
+.inline{
+    width: unset;
+    margin: 0 0.4em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #1a1a35;
+    color: white;
+    min-width: 300px;
+    border: none;
+    border-radius: 4px;
+  }
+
