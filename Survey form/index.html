@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="Stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h1 id="title">Developer event 2023 survey form</h1>
+            <p id="description">Thank you for taking the time to help us improver our futute events</p>
+        </header>
+        
+        <form id="survey-form">            
+            <fieldset>
+                <label for="name-label">Name<span class="reqStart">*</span><input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="email-label">Email<span class="reqStart">*</span><input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="number-label">Age<input id="age" name="number" type="number" placeholder="Enter your age" pattern="[0-9]" min="13" max="10000" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="dropdown-labels">
+                    <select id="dropdown">
+                        <option value="">(Select one)</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="firstRadio-label">firstRadio<input id="firstRadio" name="allRadio" type="radio"></label>
+                <label for="secondRadio-label">secondRadio<input id="secondRadio" name="allRadio" type="radio"></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="chk1-label">chk1<input id="chk1" name="chk1" type="checkbox"></label>
+                <label for="chk2-label">chk2<input id="chk2" name="chk2" type="checkbox"></label>
+                <label for="chk3-label">chk3<input id="chk3" name="chk3" type="checkbox"></label>
+                <label for="chk4-label">chk4<input id="chk4" name="chk4" type="checkbox"></label>
+                <label for="chk5-label">chk5<input id="chk5" name="chk5" type="checkbox"></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="textarea-label">
+                    <textarea id="textarea" name="textarea" rows="3" cols="30"></textarea>
+                </label>
+            </fieldset>
+
+            <input id="submit" type="submit">
+        </form>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
